@@ -48,7 +48,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'adopt'
-          java-version: 11
+          java-version: 19
       - name: Release to GH Packages
         run: sbt ciReleaseTagNextVersion publish
         env:
